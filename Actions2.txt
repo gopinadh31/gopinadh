@@ -1,0 +1,39 @@
+Actions Class:
+
+1) Mouse Hover
+2) Double Click
+3) Drag and Drop
+4) Right Click
+
+------------------------------------------------------------
+
+MouseHover:
+
+We have to create an object reference for WebElements and
+
+Actions actions = new Actions(driver);
+actions.moveToElement(Admin).
+moveToElement(User_Management).
+moveToElement(Users).click().build().perform();
+
+
+-------------------------------------------------------------
+		
+Double Click:
+
+Actions actions = new Actions(driver);
+actions.doubleClick(Copy_Text_Button).perform();
+
+-------------------------------------------------------------
+
+ContextMenu / Right click:
+
+Actions actions = new Actions(driver);
+actions.contextClick(RButton).perform();
+
+-------------------------------------------------------------
+Drag and Drop:
+
+Actions actions = new Actions(driver);
+actions.dragAndDrop(Source_Drag_Button, Target_Drop_Button).perform();
+

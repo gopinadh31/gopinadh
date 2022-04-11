@@ -1,0 +1,40 @@
+Javascript Executor:
+
+1) Scroll Into a Webelement
+2) SendKeys and Click operation
+3) Highlight a webelement border
+
+
+--------------------------------------------------------------------
+1) Scroll Into a Webelement: 
+
+We have to create a webelement object reference
+
+JavascriptExecutor js = (JavascriptExecutor)driver;
+js.executeScript("arguments[0].scrollIntoView();", Element); --- Webelement 1
+js.executeScript("arguments[0].scrollIntoView();", Element1); -- Webelement 2 
+js.executeScript("arguments[0].scrollIntoView();", Element2); -- Webelement 3
+
+
+------------------------------------------------------------------------
+
+Highlighting a Webelement Border:
+
+((JavascriptExecutor)driver).executeScript("arguments[0].style.border='3px solid red'", elem);
+
+
+---------------------------------------------------------------------------
+ SendKeys and Click operation:
+
+We have to create a webelement object reference
+
+JavascriptExecutor js = (JavascriptExecutor)driver;	
+js.executeScript("arguments[0].setAttribute('value','Admin')", username); --- SendKeys (SetAttributes)
+js.executeScript("arguments[0].setAttribute('value','admin123')", password);
+js.executeScript("arguments[0].click();", button); ---- Click (Click operation)
+
+-------------------------------------------------------------------------------
+
+
+        
+
